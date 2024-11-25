@@ -25,14 +25,6 @@
 	"chrome_settings_overrides" : {
 		"homepage": "splash.html"
 	},
-	"chrome_settings_overrides": {
-		"search_provider": {
-			"name": "rekal",
-			"search_url": "splash.html?q={searchTerms}",
-			"keyword": "rekal",
-			"favicon_url": "img/favicon.ico"
-		}
-	},
 	"omnibox": {
 		"keyword": "rekal"
 	},
