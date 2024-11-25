@@ -1,0 +1,77 @@
+{
+	"manifest_version": 3,
+	"name": "Rekal inc.",
+	"short_name": "Rekal",
+	"version": "0.1",
+	"description": "__MSG_extensionDescription__",
+	"homepage_url": "https://github.com/gcb/rekalinc",
+	"icons": {
+		"16": "img/icon.svg", "32": "img/icon.svg", "48": "img/icon.svg", "64": "img/icon.svg", "96": "img/icon.svg", "128": "img/icon.svg"
+	},
+	"default_locale": "en",
+	"offline_enabled": true,
+
+	"permissions": [
+		"bookmarks",
+		"devtools",
+		"menus",
+		"storage",
+		"tabs",
+		"unlimitedStorage"
+	],
+	"chrome_url_overrides" : {
+		"newtab": "splash.html"
+	},
+	"chrome_settings_overrides" : {
+		"homepage": "splash.html"
+	},
+	"chrome_settings_overrides": {
+		"search_provider": {
+			"name": "rekal",
+			"search_url": "splash.html?q={searchTerms}",
+			"keyword": "rekal",
+			"favicon_url": "img/favicon.ico"
+		}
+	},
+	"omnibox": {
+		"keyword": "rekal"
+	},
+
+	"action": {
+		"default_area": "navbar",
+		"default_icon": { "16": "img/icon.svg", "32": "img/icon.svg", "48": "img/icon.svg", "64": "img/icon.svg", "96": "img/icon.svg", "128": "img/icon.svg" },
+		"default_title": "__MSG_extensionName__",
+		"default_popup": "popup.html",
+		"theme_icons": [
+			{"light": "img/icon.svg", "dark": "img/icon-dark.svg", "size": 16 },
+			{"light": "img/icon.svg", "dark": "img/icon-dark.svg", "size": 32 },
+			{"light": "img/icon.svg", "dark": "img/icon-dark.svg", "size": 48 },
+			{"light": "img/icon.svg", "dark": "img/icon-dark.svg", "size": 64 },
+			{"light": "img/icon.svg", "dark": "img/icon-dark.svg", "size": 96 },
+			{"light": "img/icon.svg", "dark": "img/icon-dark.svg", "size": 128 }
+		]
+	},
+	"sidebar_action": {
+		"default_icon": "img/icon.svg",
+		"default_title": "rekal inc. sidebar",
+		"default_panel": "sidebar.html"
+	},
+
+	"options_ui": {
+		"page": "settings.html",
+		"open_in_tab": true
+	},
+	"devtools_page": "devtool.html",
+
+	"#": "ideally, incognito should be 'split' and user can only add data, not retrieve. for extra safety. but not supported on all browsers yet.",
+	"incognito": "spanning",
+
+	"background": {
+		"scripts": ["background.js"]
+	},
+
+	"storage": {
+		"managed_schema": "contribute_one_if_you_care_for_google_chrome.json"
+	}
+
+}

@@ -27,4 +27,5 @@ Features/To Do list:
 - - - [ ] save to folder/tag.
 - - - [ ] remove from saved.
 - - - [ ] update stored text. (if using versioned idea above, option to replace and to add)
+- [ ] internationalization
 

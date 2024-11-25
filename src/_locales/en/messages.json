@@ -1,0 +1,12 @@
+{
+	"extensionName": {
+		"message": "Rekal Inc.",
+		"description": "Name of the extension."
+	},
+
+	"extensionDescription": {
+		"message": "Saved places organizer. (the Ancients call it: bookmarks manager)",
+		"description": "Description of the extension."
+	}
+}
+
