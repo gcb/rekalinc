@@ -25,6 +25,11 @@
 	"chrome_settings_overrides" : {
 		"homepage": "splash.html"
 	},
+	"sidebar_action": {
+		"default_icon": "img/icon.svg",
+		"default_title": "rekal inc. sidebar",
+		"default_panel": "splash.html"
+	},
 	"omnibox": {
 		"keyword": "rekal"
 	},
@@ -42,11 +47,6 @@
 			{"light": "img/icon.svg", "dark": "img/icon-dark.svg", "size": 96 },
 			{"light": "img/icon.svg", "dark": "img/icon-dark.svg", "size": 128 }
 		]
-	},
-	"sidebar_action": {
-		"default_icon": "img/icon.svg",
-		"default_title": "rekal inc. sidebar",
-		"default_panel": "sidebar.html"
 	},
 
 	"options_ui": {
