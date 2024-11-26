@@ -13,7 +13,6 @@
 
 	"permissions": [
 		"bookmarks",
-		"devtools",
 		"menus",
 		"storage",
 		"tabs",
@@ -50,10 +49,14 @@
 	},
 
 	"options_ui": {
-		"page": "settings.html",
+		"page": "options.html",
 		"open_in_tab": true
 	},
-	"devtools_page": "devtool.html",
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "rekal@example.com"
+		}
+	},
 
 	"#": "ideally, incognito should be 'split' and user can only add data, not retrieve. for extra safety. but not supported on all browsers yet.",
 	"incognito": "spanning",
